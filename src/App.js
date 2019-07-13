@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import cards from "./cards.json"
 
 class App extends Component {
-  // Setting this.state.cards to the cards json array
+
   state = {
     cards,
     score: 0,
@@ -16,10 +16,7 @@ class App extends Component {
   };
 
   handleScores = (cards) => {
-    // We always use the setState method to update a component's state
-    // this.setState({ score: this.state.score + 1 });
-    // let highestscore = this.state.highscore;
-    // if()
+  
     let shuffledArray = this.shuffle(this.state.cards);
     this.setState({
       cards: shuffledArray
@@ -31,7 +28,6 @@ class App extends Component {
         clickedID: clickedid, 
         typeOfGuess: "You Guessed Correctly", 
         score: this.state.score + 1,
-        // highscore: this.state.highscore
       })
       console.log ("not clicked on")
     }else {
@@ -53,8 +49,7 @@ class App extends Component {
     return a;
 }
 
-  
-  // Map over this.state.friends and render a Card component 
+
   render() {
     return (
      

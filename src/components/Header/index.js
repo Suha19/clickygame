@@ -10,7 +10,7 @@ const Header = props => (
     } } 
     className= "typeOfGuess">{ props.typeOfGuess}</div>
     <div className="scores">
-      Score : {props.score} Highscore : {props.highscore}
+      Score : {props.score}
     </div>
   </div>
 );
